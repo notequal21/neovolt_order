@@ -571,6 +571,9 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .yorcontact-top__title {
@@ -905,7 +908,7 @@ h6 {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 calc(50% - 16px);
           flex: 1 1 calc(50% - 16px);
-  margin-bottom: 38px;
+  margin-bottom: 15px;
 }
 
 .payment-body__item input {
@@ -1179,6 +1182,32 @@ body {
 
   .container {
     padding: 0;
+  }
+}
+
+@media (max-width: 470px) {
+  .order-calc__item-mame {
+    margin-right: 0;
+  }
+
+  .order-calc__cost span {
+    margin-left: 0;
+  }
+
+  .order-calc__check {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100px;
+            flex: 0 1 100px;
+  }
+}
+
+@media (max-width: 380px) {
+  .order-calc__cost {
+    font-size: 14px;
+  }
+
+  .order-calc__check {
+    font-size: 11px;
   }
 }
 
